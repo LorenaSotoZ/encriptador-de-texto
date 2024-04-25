@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Alura + Oracle</title>
+    <link rel="stylesheet" href="practica.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mallanna&family=Noto+Sans+Marchen&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+    <div class="flex flex-secundario">
+        <div class="flex__item">
+            <div class="item-logo">
+                <img src="img/Logo.svg" alt="Logo Alura">
+            </div>
+            <div class="content-link">
+                <a href="index.html"><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></i></a>
+            </div>
+        </div>
+        <div class="flex__item">
+            <div>
+                <textarea class="textarea" name="convertirTexto" id="convertirTexto" value="convertirTexto"
+                    placeholder="Ingrese aquí un texto"></textarea>
+            </div>
+            <div class="content-button">
+                <button id="BtnEncriptar" class="button button-encriptar" type="button">Encriptar</button>
+                <button id="BtnDesencriptar" class="button button-desencriptar" type="button">Desencriptar</button>
+                <button id="BtnNuevo" class="button button-nuevo" type="button">Nuevo</button>
+            </div>
+        </div>
+        <div id="texto-encriptado" class="flex__item alinearTexto">
+            <div class="item__content">
+                <div class="item__img">
+                    <img id="img-muñeco" src="img/Muñeco.svg" alt="">
+                </div>
+                <div class="item__texto">
+                    <h2 id="texto-title" class="texto-title">Ningún mensaje fue encontrado</h2>
+                    <p id="texto-subtitle" class="texto-subtitle">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div class="item__button">
+                <button id="BtnCopiar" class="button-copiar" type="button">Copiar</button>
+            </div>
+            <div id="mensaje-copiar" class="item__mensaje">Texto copiado</div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/33b78e4cfa.js" crossorigin="anonymous"></script>
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
