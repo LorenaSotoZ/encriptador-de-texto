@@ -193,6 +193,24 @@ textarea:focus {
 .button:hover, .button-copiar{
     cursor: pointer;
 }
+.footer-one, .footer-two{
+    padding: 20px;
+}
+.footer-one{
+    background-color: #ffff;
+}
+.footer-one .copyright-one{
+    font-family: var(--letra-principal);
+    color: rgb(0, 0, 0, 0.4);
+    font-weight: 300;
+    text-align: center;
+}
+.footer-two .copyright-two{
+    font-family: var(--letra-principal);
+    color: rgb(0, 0, 0, 0.4);
+    font-weight: 300;
+    text-align: center;
+}
 @media(max-width: 1300px){
     .flex-principal{
         flex-direction: column-reverse;
